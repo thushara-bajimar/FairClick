@@ -1,0 +1,155 @@
+{
+  "_comment": "Dark patterns deliberately planted in each simulated page (page path relative to /sites/<site>/). Used ONLY for scoring the detector; never read by the agent. 'session' = journey-level pattern. 'session' maps task_type -> journey-level patterns for that task's flow.",
+  "streamplus": {
+    "account.html": [
+      "obstruction",
+      "hidden_information",
+      "interface_interference"
+    ],
+    "cancel/offer.html": [
+      "fake_urgency",
+      "confirm_shaming",
+      "interface_interference",
+      "hidden_information",
+      "forced_continuity",
+      "misdirection"
+    ],
+    "cancel/alternatives.html": [
+      "confirm_shaming",
+      "nagging",
+      "misdirection"
+    ],
+    "cancel/survey.html": [
+      "forced_action"
+    ],
+    "cancel/confirm.html": [
+      "interface_interference",
+      "nagging"
+    ],
+    "cancel/final.html": [
+      "nagging",
+      "interface_interference",
+      "obstruction"
+    ],
+    "session": {
+      "cancel_subscription": [
+        "obstruction"
+      ]
+    }
+  },
+  "shopease": {
+    "index.html": [
+      "pre_selection",
+      "interface_interference"
+    ],
+    "orders.html": [
+      "interface_interference"
+    ],
+    "help.html": [
+      "obstruction",
+      "misdirection"
+    ],
+    "refund-start.html": [
+      "forced_action",
+      "interface_interference"
+    ],
+    "refund-form.html": [
+      "pre_selection",
+      "hidden_information",
+      "misdirection"
+    ],
+    "session": {
+      "request_refund": [
+        "obstruction"
+      ]
+    }
+  },
+  "cookieworld": {
+    "index.html": [
+      "pre_selection",
+      "interface_interference",
+      "obstruction",
+      "misdirection"
+    ]
+  },
+  "fitlife": {
+    "index.html": [
+      "forced_continuity",
+      "hidden_information"
+    ],
+    "billing.html": [
+      "forced_continuity",
+      "hidden_information",
+      "interface_interference",
+      "obstruction"
+    ],
+    "manage.html": [
+      "fake_urgency",
+      "obstruction",
+      "interface_interference",
+      "forced_continuity",
+      "hidden_information"
+    ],
+    "cancel-step1.html": [
+      "confirm_shaming",
+      "interface_interference",
+      "nagging"
+    ],
+    "cancel-step2.html": [
+      "nagging",
+      "fake_urgency",
+      "interface_interference"
+    ],
+    "cancel-confirm.html": [
+      "pre_selection",
+      "interface_interference",
+      "obstruction"
+    ],
+    "dispute-start.html": [
+      "interface_interference",
+      "misdirection"
+    ],
+    "dispute.html": [
+      "pre_selection",
+      "misdirection"
+    ],
+    "session": {
+      "cancel_subscription": [
+        "obstruction"
+      ]
+    }
+  },
+  "travelquick": {
+    "index.html": [
+      "fake_urgency"
+    ],
+    "trip.html": [
+      "fake_urgency",
+      "interface_interference"
+    ],
+    "help.html": [
+      "obstruction"
+    ],
+    "contact.html": [
+      "obstruction"
+    ],
+    "claim-start.html": [
+      "fake_urgency",
+      "interface_interference",
+      "hidden_information",
+      "misdirection"
+    ],
+    "claim-eligibility.html": [
+      "forced_action"
+    ],
+    "claim-form.html": [
+      "pre_selection",
+      "misdirection"
+    ],
+    "session": {
+      "claim_compensation": [
+        "obstruction"
+      ]
+    }
+  }
+}
