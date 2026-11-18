@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FitLife - Dispute a charge</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="app"><div class="top"><h1>Dispute a charge</h1></div>
+<form method="post" action="submit/dispute">
+<label class="blk" for="txn">Which charge?</label>
+<select id="txn" name="transaction" required><option value="">Select a transaction</option>
+<option value="TXN-88213">3 Oct 2026 &middot; FitLife Pro monthly &middot; $29.99 &middot; TXN-88213</option>
+<option value="TXN-90544">3 Nov 2026 &middot; FitLife Pro monthly &middot; $29.99 &middot; TXN-90544</option>
+<option value="TXN-90545">3 Nov 2026 &middot; Coach+ add-on &middot; $9.99 &middot; TXN-90545</option></select>
+<label class="blk" for="reason">Reason</label>
+<select id="reason" name="reason" required><option value="">Select a reason</option><option value="unauthorised">I didn't authorise this charge</option><option value="after_cancel">Charged after cancelling</option><option value="duplicate">Duplicate charge</option><option value="amount">Amount is wrong</option><option value="other">Other</option></select>
+<label class="blk" for="what">What happened?</label><textarea id="what" name="description" rows="3"></textarea>
+<fieldset><legend>Preferred resolution</legend>
+<label><input type="radio" name="resolution" value="free_month" checked> 1 free month of Pro instead (recommended)</label><br>
+<label><input type="radio" name="resolution" value="refund"> Refund to original payment method</label></fieldset>
+<label><input type="checkbox" name="confirm" required> I confirm the information above is accurate</label>
+<button class="cta" type="submit">Submit dispute</button>
+</form></div><nav class="tabbar" aria-label="App tabs"><a href="index.html">Home</a><a href="index.html#workouts">Workouts</a><a href="index.html#coach">Coach</a><a href="profile.html">Profile</a></nav></body></html>

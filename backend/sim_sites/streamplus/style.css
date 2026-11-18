@@ -1,0 +1,35 @@
+/* StreamPlus - dark cinematic streaming service (simulation) */
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:#0d0b14;color:#ece8f5;font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:inherit}
+.sp-header{display:flex;align-items:center;gap:28px;padding:14px 40px;background:linear-gradient(#000c,#0000);position:sticky;top:0;z-index:5;background-color:#0d0b14}
+.logo{font-weight:900;font-size:26px;letter-spacing:-1px;color:#ff3d6e;text-decoration:none}
+.logo span{color:#b18cff}
+.sp-nav{display:flex;gap:18px;flex:1}.sp-nav a{text-decoration:none;color:#c9c2da;font-size:15px}
+.profile{position:relative}
+.avatar{width:36px;height:36px;border-radius:8px;background:#b18cff;display:grid;place-items:center;font-weight:700;color:#1b1030;cursor:pointer}
+.profile-menu{display:none;position:absolute;right:0;top:36px;background:#1b1726;border:1px solid #332c47;border-radius:8px;min-width:180px;padding:8px 0;list-style:none;margin:0}
+.profile:hover .profile-menu{display:block}
+.profile-menu a{display:block;padding:8px 16px;text-decoration:none;font-size:14px}
+.profile-menu a:hover{background:#2a2340}
+.hero{padding:60px 40px;background:radial-gradient(circle at 70% 30%,#4a1d6e,#0d0b14 60%)}
+.hero h1{font-size:44px;margin:0 0 10px}
+.btn{display:inline-block;padding:12px 26px;border-radius:6px;border:0;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none}
+.btn-hot{background:#ff3d6e;color:#fff}.btn-purple{background:#b18cff;color:#1b1030}
+.btn-ghost{background:#ffffff1a;color:#fff}
+.btn-huge{padding:20px 44px;font-size:20px}
+.row{padding:10px 40px}.row h2{font-size:18px;color:#c9c2da}
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.tile{aspect-ratio:2/3;border-radius:6px;background:linear-gradient(160deg,#3b2a5c,#1a1426);display:flex;align-items:flex-end;padding:8px;font-size:13px;font-weight:600}
+.panel{max-width:760px;margin:40px auto;background:#17131f;border:1px solid #2a2340;border-radius:12px;padding:32px}
+.muted{color:#8c84a0}.fine{font-size:10px;color:#4a4458}
+.whisper{color:#3b3548;font-size:12px;text-decoration:none}
+details summary{cursor:pointer}
+.offer{border:2px solid #ff3d6e;border-radius:12px;padding:24px;text-align:center;background:#24101a}
+.timer{font-family:Consolas,monospace;font-size:28px;color:#ffcc4d}
+.dialog-backdrop{position:fixed;inset:0;background:#000b;display:grid;place-items:center;z-index:20}
+.dialog{background:#1b1726;border-radius:14px;padding:30px;max-width:440px;text-align:center;border:1px solid #3d3460}
+.sp-footer{padding:30px 40px;color:#6d6582;font-size:13px;display:flex;gap:20px}
+.sp-footer a{text-decoration:none}
+.ai-note{margin-top:22px;font-size:11px;color:#5d5670;border-top:1px dashed #2a2340;padding-top:10px}
+label.opt{display:block;padding:10px 12px;border:1px solid #2a2340;border-radius:8px;margin:8px 0}

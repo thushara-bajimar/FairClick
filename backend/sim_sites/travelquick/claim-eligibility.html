@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>TravelQuick - Eligibility check</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="bar"><a class="logo" href="index.html">TravelQuick</a><ul class="menu"><li><a href="index.html">Book</a></li><li><a href="index.html#deals">Deals</a></li><li><a href="trips.html">Manage trips</a></li><li><button type="button" aria-controls="help-menu" aria-expanded="false">Help &#9662;</button><ul class="dropdown" id="help-menu" hidden><li><a href="help.html">FAQs</a></li><li><a href="contact.html">Contact us</a></li><li><a href="index.html#alerts">Travel alerts</a></li></ul></li></ul><a href="index.html#login" style="color:#fff">Alex M.</a></header><div class="crumbs">Home &rsaquo; Help &rsaquo; Delays &rsaquo; Claim &rsaquo; Eligibility</div>
+<div class="wrap"><div class="box"><h1>Check your eligibility</h1>
+<form method="get" action="claim-form.html">
+<fieldset><legend>Do you know the reason for the delay?</legend>
+<label><input type="radio" name="cause" value="weather" required> Weather</label><br>
+<label><input type="radio" name="cause" value="technical"> Technical problem</label><br>
+<label><input type="radio" name="cause" value="unknown"> Don't know</label></fieldset>
+<label class="blk" for="heard">How did you hear about TravelQuick?</label>
+<select id="heard" name="heard" required><option value="">Please choose</option><option value="search">Search engine</option><option value="friend">Friend or family</option><option value="ad">Advertisement</option><option value="other">Prefer not to say</option></select>
+<p><button class="btn" type="submit">Continue</button></p>
+</form></div></div><script src="../_shared/sim.js"></script></body></html>

@@ -1,0 +1,28 @@
+/* ShopEase - bright marketplace with left sidebar (simulation) */
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f3f3;color:#1d1d1f}
+a{color:#0b5cad}
+.topbar{background:#ff7a00;color:#fff;display:flex;align-items:center;gap:20px;padding:10px 24px}
+.topbar .brand{font-size:24px;font-weight:800;color:#fff;text-decoration:none;font-style:italic}
+.topbar form{flex:1;display:flex}.topbar input{flex:1;padding:9px;border:0;border-radius:4px 0 0 4px}
+.topbar form button{border:0;background:#232f3e;color:#fff;padding:0 16px;border-radius:0 4px 4px 0}
+.topbar a.top{color:#fff;text-decoration:none;font-size:13px;line-height:1.2}
+.subbar{background:#232f3e;padding:8px 24px;display:flex;gap:18px}.subbar a{color:#fff;text-decoration:none;font-size:13px}
+.layout{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:20px 24px}
+.side{background:#fff;padding:14px;border-radius:6px;font-size:14px}.side a{display:block;padding:5px 0;color:#333;text-decoration:none}
+.card{background:#fff;border-radius:6px;padding:18px;margin-bottom:14px;box-shadow:0 1px 2px #0001}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.product{background:#fff;padding:14px;border-radius:6px}.ph{height:110px;background:#ffe3c7;border-radius:4px;margin-bottom:8px}
+.btn{display:inline-block;padding:9px 18px;border-radius:20px;border:1px solid #c45500;background:#ffa41c;color:#111;font-weight:700;text-decoration:none;cursor:pointer;font-size:14px}
+.btn-big{padding:14px 30px;font-size:17px}
+.btn-plain{background:#fff;border:1px solid #ccc;font-weight:400}
+.tiny{font-size:10px;color:#b8b8b8}
+.small-link{font-size:12px;color:#999}
+.cookie-bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:3px solid #ff7a00;padding:14px 24px;display:flex;align-items:center;gap:16px;box-shadow:0 -2px 10px #0002;font-size:14px}
+.order{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding:12px 0}
+.tile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tile-grid a{display:block;background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px;text-decoration:none;color:#111}
+label.blk{display:block;margin:12px 0 4px;font-weight:700}
+input[type=text],select,textarea{width:100%;padding:8px;border:1px solid #aaa;border-radius:4px}
+fieldset{border:1px solid #ddd;border-radius:6px;margin:14px 0}
+footer{padding:24px;color:#666;font-size:13px;background:#232f3e;color:#ccc;margin-bottom:70px}
+footer a{color:#ccc}

@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ShopEase - Refund request</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">ShopEase</a><form action="index.html" method="get" role="search"><input name="q" aria-label="Search ShopEase" placeholder="Search ShopEase"><button type="submit">Search</button></form><a class="top" href="account.html">Hello, Alex<br><b>Account &amp; Lists</b></a><a class="top" href="index.html#cart">Cart (2)</a></header><nav class="subbar" aria-label="Departments"><a href="index.html">Today's Deals</a><a href="index.html#electronics">Electronics</a><a href="index.html#home">Home &amp; Kitchen</a><a href="index.html#member">EaseMember</a></nav>
+<main style="padding:20px 24px;max-width:800px;margin:auto"><div class="card"><h1>Refund request</h1>
+<form method="post" action="submit/refund">
+<label class="blk" for="order_number">Order number</label><input type="text" id="order_number" name="order_number" required>
+<label class="blk" for="reason">Reason for refund</label>
+<select id="reason" name="reason" required><option value="">Select a reason</option><option value="damaged">Item arrived damaged or defective</option><option value="wrong">Wrong item received</option><option value="not_described">Item not as described</option><option value="unwanted">No longer needed</option><option value="other">Other</option></select>
+<label class="blk" for="details">Details</label><textarea id="details" name="details" rows="3"></textarea>
+<fieldset><legend>How would you like to receive your refund?</legend>
+<label><input type="radio" name="refund_method" value="store_credit" checked> ShopEase store credit &mdash; instant (recommended)</label><br>
+<label><input type="radio" name="refund_method" value="original"> Original payment method (5&ndash;7 business days)</label>
+<p class="tiny">Refunds to the original payment method may be subject to a 15% restocking fee at our discretion.</p>
+</fieldset>
+<label><input type="checkbox" name="deals" checked> Sign me up for ShopEase deals and offers</label>
+<p><button class="btn btn-big" type="submit">Submit refund request</button></p>
+</form></div></main>
+<footer><p>ShopEase is a simulated store for FairClick testing. <a href="help.html">Help</a> &middot; <a href="index.html#conditions">Conditions of use</a></p><form method="post" action="submit/subscribe"><label>Get deals by email <input type="text" name="newsletter_email"></label> <button type="submit">Subscribe</button></form></footer></body></html>

@@ -1,0 +1,19 @@
+/* CookieWorld - editorial magazine with a consent wall (simulation) */
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:#f7f1e6;color:#2b2118;font-family:Georgia,"Times New Roman",serif}
+a{color:#7a2e12}
+.masthead{text-align:center;padding:26px 10px 8px;border-bottom:3px double #2b2118}
+.masthead .name{font-size:52px;font-weight:700;letter-spacing:2px;text-decoration:none;color:#2b2118}
+.masthead nav{margin-top:10px;font-variant:small-caps;letter-spacing:1px}.masthead nav a{margin:0 12px;text-decoration:none;color:#2b2118}
+.paper{max-width:1080px;margin:24px auto;display:grid;grid-template-columns:2fr 1fr;gap:30px;padding:0 20px}
+article h2{font-size:30px;margin:0 0 6px}article p{line-height:1.6}
+.side h3{border-bottom:1px solid #2b2118}
+.consent-backdrop{position:fixed;inset:0;background:#2b2118cc;display:grid;place-items:center;z-index:50}
+.consent{background:#fffdf8;max-width:620px;width:92%;border-radius:4px;padding:28px 32px;font-family:Arial,sans-serif;max-height:90vh;overflow:auto}
+.consent h2{font-family:Georgia,serif;margin-top:0}
+.consent p{font-size:14px;line-height:1.5;color:#3d342b}
+.accept{display:block;width:100%;padding:18px;background:#1f8f4e;color:#fff;font-size:19px;font-weight:700;border:0;border-radius:4px;cursor:pointer;margin:14px 0}
+.quiet{background:none;border:0;color:#a59a8c;font-size:12px;text-decoration:underline;cursor:pointer;padding:4px}
+.toggle{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #eee;font-size:14px}
+.toggle input{width:18px;height:18px}
+.saved{background:#fff;border:1px solid #d6cbb8;padding:24px;max-width:640px;margin:40px auto;font-family:Arial,sans-serif}

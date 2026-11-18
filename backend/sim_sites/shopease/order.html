@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ShopEase - Order details</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">ShopEase</a><form action="index.html" method="get" role="search"><input name="q" aria-label="Search ShopEase" placeholder="Search ShopEase"><button type="submit">Search</button></form><a class="top" href="account.html">Hello, Alex<br><b>Account &amp; Lists</b></a><a class="top" href="index.html#cart">Cart (2)</a></header><nav class="subbar" aria-label="Departments"><a href="index.html">Today's Deals</a><a href="index.html#electronics">Electronics</a><a href="index.html#home">Home &amp; Kitchen</a><a href="index.html#member">EaseMember</a></nav>
+<main style="padding:20px 24px;max-width:1000px;margin:auto"><h1>Order details</h1>
+<div class="card" id="order-card">Loading order&hellip;</div>
+<div class="card"><a class="btn btn-big" href="index.html#cart">Buy it again</a> <a class="btn btn-plain" href="index.html#review">Write a product review</a> <a class="btn btn-plain" href="index.html#invoice">Download invoice</a>
+<p><a class="small-link" id="help-link" href="help.html">Get help with order</a></p></div>
+</main>
+<footer><p>ShopEase is a simulated store for FairClick testing. <a href="help.html">Help</a> &middot; <a href="index.html#conditions">Conditions of use</a></p><form method="post" action="submit/subscribe"><label>Get deals by email <input type="text" name="newsletter_email"></label> <button type="submit">Subscribe</button></form></footer>
+<script>
+// Rendered dynamically from the URL (dynamic content for the agent to handle).
+const orders = {"ORD-1001":["BrewMaster Coffee Grinder","$34.50","2 Nov 2026"],"ORD-1002":["AuraSound Wireless Headphones","$59.99","9 Nov 2026"],"ORD-1003":["Lumen Desk Lamp","$22.00","12 Nov 2026"]};
+const id = new URLSearchParams(location.search).get("id");
+setTimeout(() => {
+  const card = document.getElementById("order-card");
+  const o = orders[id];
+  card.textContent = "";
+  if (!o) { card.textContent = "Order not found."; return; }
+  const h = document.createElement("h2"); h.textContent = "Order " + id; card.appendChild(h);
+  const p = document.createElement("p"); p.textContent = o[0] + " - " + o[1] + " - delivered " + o[2] + " - paid with Visa ending 4421"; card.appendChild(p);
+  document.getElementById("help-link").href = "help.html?order=" + encodeURIComponent(id);
+}, 300);
+</script></body></html>

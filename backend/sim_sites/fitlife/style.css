@@ -1,0 +1,21 @@
+/* FitLife - mobile-first fitness app with bottom tab bar (simulation) */
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:#e9f7f4;font-family:"Trebuchet MS",Verdana,sans-serif;color:#0f2e2a}
+.app{max-width:440px;margin:0 auto;min-height:100vh;background:#fff;padding:18px 18px 90px;position:relative}
+.top{display:flex;justify-content:space-between;align-items:center}
+.top h1{font-size:22px;margin:0}.badge{background:#14b8a6;color:#fff;border-radius:20px;padding:3px 10px;font-size:12px;font-weight:700}
+.card{border-radius:18px;padding:16px;margin:14px 0;background:#f2fbf9;border:1px solid #cdeee7}
+.card.hot{background:linear-gradient(135deg,#ff8a00,#ff3d77);color:#fff;border:0}
+.stat{display:inline-block;width:31%;text-align:center}.stat b{display:block;font-size:22px}
+.cta{display:block;text-align:center;background:#14b8a6;color:#fff;font-weight:800;padding:16px;border-radius:14px;text-decoration:none;border:0;width:100%;font-size:17px;cursor:pointer;margin:8px 0}
+.cta.orange{background:#ff6a00}
+.ghost{display:block;text-align:center;color:#b7c4c2;font-size:11px;text-decoration:none;margin:12px 0;background:none;border:0;width:100%;cursor:pointer}
+.list a{display:flex;justify-content:space-between;padding:14px 4px;border-bottom:1px solid #e3efec;text-decoration:none;color:#0f2e2a}
+.tabbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;display:flex;background:#fff;border-top:1px solid #d7ece7}
+.tabbar a{flex:1;text-align:center;padding:12px 0;font-size:12px;text-decoration:none;color:#5c7a75}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 4px;border-bottom:1px solid #e3efec;text-align:left}
+.fine{font-size:9px;color:#c2cfcc}
+.timer{font-family:Consolas,monospace;font-size:26px;font-weight:700}
+label.blk{display:block;font-weight:700;margin:12px 0 4px;font-size:14px}
+select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #bcdcd5;font-size:14px}
+fieldset{border:1px solid #cdeee7;border-radius:12px;margin:12px 0}

@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ShopEase - Before you request a refund</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><a class="brand" href="index.html">ShopEase</a><form action="index.html" method="get" role="search"><input name="q" aria-label="Search ShopEase" placeholder="Search ShopEase"><button type="submit">Search</button></form><a class="top" href="account.html">Hello, Alex<br><b>Account &amp; Lists</b></a><a class="top" href="index.html#cart">Cart (2)</a></header><nav class="subbar" aria-label="Departments"><a href="index.html">Today's Deals</a><a href="index.html#electronics">Electronics</a><a href="index.html#home">Home &amp; Kitchen</a><a href="index.html#member">EaseMember</a></nav>
+<main style="padding:20px 24px;max-width:800px;margin:auto">
+<div class="card" style="background:#fff4e8"><h1>Did you know? Exchanges are faster!</h1><p>Get a replacement in 24 hours instead of waiting for a refund.</p><a class="btn btn-big" href="exchange.html">Start an exchange instead</a></div>
+<div class="card"><h2>Request a refund</h2>
+<p>Please complete our quick satisfaction survey to continue to the refund request.</p>
+<form method="get" action="refund-form.html">
+<input type="hidden" name="order" id="carry-order">
+<fieldset><legend>How satisfied were you with your ShopEase experience?</legend>
+<label><input type="radio" name="satisfaction" value="5" required> Very satisfied</label><br>
+<label><input type="radio" name="satisfaction" value="3"> Neutral</label><br>
+<label><input type="radio" name="satisfaction" value="1"> Unsatisfied</label><br>
+<label><input type="radio" name="satisfaction" value="na"> Prefer not to say</label></fieldset>
+<button class="btn btn-plain" type="submit">Continue to refund request</button>
+</form></div></main>
+<footer><p>ShopEase is a simulated store for FairClick testing. <a href="help.html">Help</a> &middot; <a href="index.html#conditions">Conditions of use</a></p><form method="post" action="submit/subscribe"><label>Get deals by email <input type="text" name="newsletter_email"></label> <button type="submit">Subscribe</button></form></footer>
+<script>document.getElementById("carry-order").value = new URLSearchParams(location.search).get("order") || "";</script>
+</body></html>
