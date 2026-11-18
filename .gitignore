@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# FairClick runtime data (databases, evidence screenshots)
+backend/data/
+backend/benchmark/data/
+
+# Secrets
+.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/node_modules/.tmp/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Reference documentation (personal, not committed)
+docs/
+ARCHITECTURE.md
+API_DOCUMENTATION.md
+DATABASE.md
+SECURITY.md
+TESTING.md
+PROJECT_REPORT.md
+PRESENTATION_CONTENT.md
+PRESENTATION_GENERATION_PROMPT.md
+FairClick_Project_Report.pdf
+
+# Benchmark run artifacts (latest.json is kept)
+backend/benchmark/results/*.log
+backend/benchmark/results/benchmark_*.json
